@@ -30,3 +30,8 @@
 .btns:hover .perspective-second {
     opacity: 100;
 }
+
+.perspective-class {
+    perspective: 120px;
+    perspective-origin: bottom;
+}

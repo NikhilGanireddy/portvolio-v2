@@ -1,17 +1,28 @@
 "use client"
-import {motion} from "framer-motion";
+import {AnimatePresence, motion} from "framer-motion";
 import Link from "next/link";
 import {useState} from "react";
 import NavButton from "./NavButton/NavButton";
+import NavLinks from "./NavLinks/NavLinks";
 
 const Navbar = () => {
     const [isActive, setIsActive] = useState(false)
 
     const variants = {
         open: {
-            maxWidth: 600, width: "97%", height: 650, top: "290px", right: "-10px",
+            maxWidth: 500,
+            width: "97%",
+            height: 500,
+            top: "210px",
+            right: "-10px",
+            transition: {duration: 0.7, ease: [0.83, 0, 0.17, 1]}
         }, closed: {
-            width: 100, height: 50, top: "0px", right: "0px"
+            width: 100,
+            height: 50,
+            top: "0px",
+            right: "0px",
+            transition: {duration: 0.7, delay: 0.35, ease: [0.83, 0, 0.17, 1]}
+
         }
     }
 
@@ -27,8 +38,10 @@ const Navbar = () => {
                 transition={{
                     duration: 0.7, ease: [0.83, 0, 0.17, 1]
                 }}
-                className={` absolute w-[98%] top-1/2 -translate-y-1/2 right-0  bg-black rounded-3xl`}>
-
+                className={` absolute  top-1/2 -translate-y-1/2 right-0  bg-black rounded-3xl`}>
+                <AnimatePresence>
+                    {isActive && <NavLinks/>}
+                </AnimatePresence>
             </motion.div>
             < NavButton isActive={isActive} setIsActive={setIsActive}/>
         </div>
