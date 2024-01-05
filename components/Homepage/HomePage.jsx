@@ -16,9 +16,11 @@ const HomePage = () => {
 
             <p className={`text-lg md:text-xl lg:text-3xl text-neutral-400 tracking-tighter`}>If you're interested in
                 working with me,
-                <Link href={"/"} className={`text-black ml-2 group hover:text-orange-500 ease-in duration-200 transition-all`}>
+                <Link href={"/"}
+                      className={`text-black ml-2 group hover:text-orange-500 ease-in duration-200 transition-all`}>
                     let’s talk
-                    <IconArrowRight className={` inline-flex ml-1 group-hover:translate-x-2 ease-in duration-200 transition-all group-hover:text-orange-500`}/>
+                    <IconArrowRight
+                        className={` inline-flex ml-1 group-hover:translate-x-2 ease-in duration-200 transition-all group-hover:text-orange-500`}/>
 
                 </Link>
             </p>
@@ -45,3 +47,14 @@ const HomePage = () => {
 }
 
 export default HomePage
+
+
+export function MaskText() {
+    return (<div className={styles.body}>
+            {phrases.map((phrase, index) => {
+                return <div key={index} className={styles.lineMask}>
+                    <p>{phrase}</p>
+                </div>
+            })}
+        </div>)
+}

@@ -13,7 +13,7 @@ export default function RootLayout({
                                    }) {
     return (<html lang="en">
     <body className={`bg-black text-white flex flex-col h-screen ${inter.className}`}>
-    <div className={`h-[95px] lg:h-[150px] `}>
+    <div className={`h-[95px] lg:h-[150px] relative`}>
         <Navbar/>
     </div>
     <div className={`flex-1`}>
