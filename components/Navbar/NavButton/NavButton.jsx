@@ -1,6 +1,6 @@
 "use client"
 import {motion} from "framer-motion";
-import PerspectiveText from "../../../PerspectiveText";
+import PerspectiveText from "../../PerspectiveText";
 
 const NavButton = ({isActive, setIsActive}) => {
     return <div

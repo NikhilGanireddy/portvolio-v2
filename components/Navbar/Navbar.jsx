@@ -26,7 +26,8 @@ const Navbar = () => {
         }
     }
 
-    return <div className={`relative w-full flex justify-between items-center px-4 lg:px-16 py-8 lg:py-12 h-max`}>
+    return <div
+        className={` bg-white text-black relative w-full flex justify-between items-center px-4 lg:px-16 h-full min-h-[100px]`}>
         <Link href={"/"} className={`w-max font-semibold text-base lg:text-lg tracking-tight `}>
             <h1 className={`w-fit`}>Nikhil&nbsp;Ganireddy</h1>
         </Link>
