@@ -2,9 +2,9 @@
 import {motion} from "framer-motion";
 import PerspectiveText from "../../../PerspectiveText";
 
-const NavMenu = ({isActive, setIsActive}) => {
+const NavButton = ({isActive, setIsActive}) => {
     return <div
-        className={` h-12 w-24 rounded-full cursor-pointer relative overflow-hidden`}
+        className={` h-[50px] w-[100px] rounded-3xl right-0 cursor-pointer absolute top-1/2 -translate-y-1/2 overflow-hidden`}
         onClick={() => setIsActive(!isActive)}
     >
         <motion.div
@@ -12,20 +12,20 @@ const NavMenu = ({isActive, setIsActive}) => {
                 top: isActive ? "-100%" : "0"
             }}
             transition={{
-                duration: 0.5, ease: [0.83, 0, 0.17, 1]
+                duration: 0.7, ease: [0.83, 0, 0.17, 1]
             }}
             className={`slider relative w-full h-full`}>
             <div
-                className={`btns w-full h-full bg-black text-white text-sm font-semibold uppercase`}>
+                className={`btns w-full h-full bg-black text-white`}>
                 <PerspectiveText text={"MENU"}/>
             </div>
 
             <div
-                className={`btns w-full h-full bg-white text-black absolute top-full font-semibold text-sm uppercase`}>
+                className={`btns w-full h-full bg-white text-black absolute top-full`}>
                 <PerspectiveText text={"CLOSE"}/>
             </div>
         </motion.div>
     </div>
 }
 
-export default NavMenu
+export default NavButton
