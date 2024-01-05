@@ -9,7 +9,7 @@ const Navbar = () => {
 
     const variants = {
         open: {
-            maxWidth: 600, width: "100%", height: 650, top: "290px", right: "-10px",
+            maxWidth: 600, width: "97%", height: 650, top: "290px", right: "-10px",
         }, closed: {
             width: 100, height: 50, top: "0px", right: "0px"
         }
@@ -27,7 +27,7 @@ const Navbar = () => {
                 transition={{
                     duration: 0.7, ease: [0.83, 0, 0.17, 1]
                 }}
-                className={` absolute w-full top-1/2 -translate-y-1/2 right-0  bg-black rounded-3xl`}>
+                className={` absolute w-[98%] top-1/2 -translate-y-1/2 right-0  bg-black rounded-3xl`}>
 
             </motion.div>
             < NavButton isActive={isActive} setIsActive={setIsActive}/>
