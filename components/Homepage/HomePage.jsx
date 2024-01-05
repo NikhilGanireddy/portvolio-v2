@@ -16,27 +16,28 @@ const HomePage = () => {
 
             <p className={`text-lg md:text-xl lg:text-3xl text-neutral-400 tracking-tighter`}>If you're interested in
                 working with me,
-                <Link href={"/"} className={`text-black ml-2`}>
+                <Link href={"/"} className={`text-black ml-2 group hover:text-orange-500 ease-in duration-200 transition-all`}>
                     let’s talk
-                    <IconArrowRight className={` inline-flex ml-1 `}/>
+                    <IconArrowRight className={` inline-flex ml-1 group-hover:translate-x-2 ease-in duration-200 transition-all group-hover:text-orange-500`}/>
 
                 </Link>
             </p>
         </div>
         <div className={`h-max py-12 w-full flex flex-col md:flex-row gap-6`}>
-            <div className={`w-full md:w-1/2  flex flex-col justify-center font-light text-sm md:text-base`}>
+            <div className={`w-full md:w-1/2  flex flex-col justify-center  text-sm md:text-base`}>
                 <h4>Freelance</h4>
                 <h4>UI Designer</h4>
                 <h4>Full stack developer</h4>
             </div>
-            <div className={`w-full md:w-1/2 flex justify-between items-end font-light text-sm md:text-base`}>
+            <div className={`w-full md:w-1/2 flex justify-between items-end  text-sm md:text-base`}>
                 <div>
                     <h4>Based in</h4>
                     <h4>India</h4>
                 </div>
                 <div>
                     <h4>Get in touch</h4>
-                    <a href="mailto:email@example.com" className={`font-normal text-sm md:text-base`}>nikhilganireddy@yahoo.com</a>
+                    <a href="mailto:email@example.com"
+                       className={`font-normal text-sm md:text-base duration-200 ease-in transition-all hover:text-orange-500 `}>nikhilganireddy@yahoo.com</a>
                 </div>
             </div>
         </div>
