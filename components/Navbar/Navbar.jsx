@@ -1,12 +1,13 @@
 "use client"
 import {AnimatePresence, motion} from "framer-motion";
 import Link from "next/link";
-import {useState} from "react";
+import {useContext} from "react";
 import NavButton from "./NavButton/NavButton";
 import NavLinks from "./NavLinks/NavLinks";
+import {GlobalContext} from "../../app/Context/contextApi";
 
 const Navbar = () => {
-    const [isActive, setIsActive] = useState(false)
+    const {isActive, setIsActive}= useContext(GlobalContext)
 
     const variants = {
         open: {
@@ -33,6 +34,7 @@ const Navbar = () => {
         </Link>
         <div className={`fixed w-full right-4 lg:right-10`}>
             <motion.div
+
                 variants={variants}
                 animate={isActive ? "open" : "closed"}
                 initial={"closed"}

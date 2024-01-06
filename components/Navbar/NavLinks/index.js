@@ -10,11 +10,11 @@ export const links = [{
 
 
 export const footerlinks = [{
-    title: "Linkedin", href: "/"
+    title: "Linkedin", href: "https://www.linkedin.com/in/nikhil-ganireddy-5522a9235/"
 }, {
-    title: "Github", href: "/"
+    title: "Github", href: "https://github.com/NikhilGanireddy"
 }, {
-    title: "Instagram", href: "/"
+    title: "Whatsapp", href: "https://www.whatsapp.com"
 },]
 
 

@@ -2,8 +2,11 @@
 import {motion} from "framer-motion";
 import Link from "next/link";
 import {footerlinks, links} from "./index";
+import {useContext} from "react";
+import {GlobalContext} from "../../../app/Context/contextApi";
 
 const NavLinks = () => {
+    const {isActive, setIsActive} = useContext(GlobalContext)
 
     const perspective = {
         initial: {
@@ -36,6 +39,7 @@ const NavLinks = () => {
                 className={` perspective-class`}
             >
                 <motion.div
+                    href={link.href}
                     custom={index}
                     variants={perspective}
                     animate={"enter"}
@@ -45,7 +49,9 @@ const NavLinks = () => {
                     <Link
                         href={link.href}
                         key={index}
-                        className={` text-4xl `}>
+                        className={` text-4xl `}
+                        onClick={() => setIsActive(!isActive)}
+                    >
                         {link.title}
                     </Link>
                 </motion.div>
@@ -67,7 +73,9 @@ const NavLinks = () => {
                 >
                     <Link
                         href={link.href}
+                        target={"_blank"}
                         key={index}
+                        onClick={() => setIsActive(!isActive)}
                         className={` text-xl font-extralight`}>
                         {link.title}
                     </Link>
