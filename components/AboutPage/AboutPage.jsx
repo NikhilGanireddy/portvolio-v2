@@ -51,7 +51,7 @@ const AboutPage = () => {
                         }}
                         className={`text-sm md:text-base leading-6 md:leading-8`}>
                         Hi I'm Nikhil Ganireddy, a computer science undergrad with a passion for programming.
-                        Transitioning from my academic journey, I immersed myself in a coding bootcamp to master
+                        Transitioning from my academic journey, I've immersed myself in mastering
                         full-stack web development. The thrill of problem-solving is what fuels my enthusiasm, and I
                         specialize in React, Next.js, Node.js, and MongoDB. Proficient in TypeScript, and
                         Prisma, I am constantly exploring cutting-edge technologies. Currently seeking a fulfilling role
