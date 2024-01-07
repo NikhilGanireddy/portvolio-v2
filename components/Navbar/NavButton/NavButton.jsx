@@ -21,7 +21,7 @@ const NavButton = ({isActive, setIsActive}) => {
             </div>
 
             <div
-                className={`btns w-full h-full bg-white text-black absolute top-full`}>
+                className={`btns w-full h-full bg-neutral-200 text-black absolute top-full`}>
                 <PerspectiveText text={"CLOSE"}/>
             </div>
         </motion.div>
