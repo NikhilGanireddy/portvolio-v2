@@ -16,7 +16,7 @@ const NavButton = ({isActive, setIsActive}) => {
             }}
             className={`slider relative w-full h-full`}>
             <div
-                className={`btns w-full h-full bg-black text-white`}>
+                className={`btns w-full h-full bg-black text-neutral-200`}>
                 <PerspectiveText text={"MENU"}/>
             </div>
 

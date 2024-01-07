@@ -14,7 +14,7 @@ export default function Home() {
             animate={{
                 translateX: x - 40, translateY: y - 40, opacity: 1,
             }}
-            transition={{type: "tween", ease: "backOut", duration: 0.5}}
+            transition={{type: "tween", ease: "backOut", duration: 0.3}}
             className={`hidden md:inline-flex md:absolute md:w-20 md:h-20 md:border-[1px] md:border-black md:bg-transparent md:rounded-full md:z-50 pointer-events-none `}/>
         <motion.div
             initial={{

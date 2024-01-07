@@ -13,8 +13,8 @@ const Navbar = () => {
         open: {
             maxWidth: 500,
             width: "97%",
-            height: 500,
-            top: "210px",
+            height: 550,
+            top: "235px",
             right: "-10px",
             transition: {duration: 0.7, ease: [0.83, 0, 0.17, 1]}
         }, closed: {
@@ -36,7 +36,7 @@ const Navbar = () => {
     }
 
     return <div
-        className={`bg-white text-black w-full flex justify-between items-center px-4 lg:px-16 min-h-[px] h-[95px] lg:h-[150px] relative`}>
+        className={`bg-neutral-200 rounded-t-3xl text-black w-full flex justify-between items-center px-4 lg:px-16 min-h-[px] h-[95px] lg:h-[150px] relative`}>
         <Link href={"/"} className={`w-max font-semibold text-base lg:text-lg tracking-tight `}>
             <motion.h1
                 initial={"initial"}
@@ -45,7 +45,7 @@ const Navbar = () => {
                 transition={{
                     duration: 0.5, ease: [0.83, 0, 0.17, 1]
                 }}
-                className={`w-fit`}>Nikhil&nbsp;Ganireddy
+                className={`w-fit font-normal`}>Nikhil&nbsp;Ganireddy
             </motion.h1>
         </Link>
         <motion.div
@@ -65,7 +65,7 @@ const Navbar = () => {
                 transition={{
                     duration: 0.7, ease: [0.83, 0, 0.17, 1]
                 }}
-                className={` absolute  top-1/2 -translate-y-1/2 right-0  bg-black rounded-3xl`}>
+                className={` absolute top-1/2 -translate-y-1/2 right-0  bg-black rounded-3xl`}>
                 <AnimatePresence>
                     {isActive && <NavLinks/>}
                 </AnimatePresence>

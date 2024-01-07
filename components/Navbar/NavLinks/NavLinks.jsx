@@ -32,7 +32,7 @@ const NavLinks = () => {
         }
     }
 
-    return <div className={` text-white p-4 w-full h-full box-border pt-24 px-10 pb-10 space-y-12`}>
+    return <div className={` text-neutral-200 p-4 w-full h-full box-border pt-24 px-10 pb-10 space-y-12`}>
         <div className={` flex flex-col justify-center gap-6`}>
             {links.map((link, index) => <div
                 key={index}
@@ -50,7 +50,7 @@ const NavLinks = () => {
                         href={link.href}
                         key={index}
                         onClick={() => setIsActive(!isActive)}
-                        className={`text-2xl lg:text-4xl hover:text-orange-500 transition-all duration-200 `}
+                        className={`text-xl lg:text-3xl hover:text-orange-500 transition-all duration-200 `}
 
                     >
                         {link.title}
@@ -77,7 +77,7 @@ const NavLinks = () => {
                         target={"_blank"}
                         key={index}
                         onClick={() => setIsActive(!isActive)}
-                        className={` text-xl font-extralight`}>
+                        className={` text-lg font-extralight`}>
                         {link.title}
                     </Link>
                 </motion.div>
