@@ -6,6 +6,7 @@ import IconLine from "../../icons/LineIcon";
 import IconArrowRight from "../../icons/ArrowRight";
 
 const HomePage = () => {
+    const delayDefault = 0.025
     const variants = {
         initial: {
             y: "50px", opacity: 0
@@ -13,6 +14,8 @@ const HomePage = () => {
             y: 0, opacity: 1
         }
     }
+
+
     return <div
         className={`flex flex-col justify-center items-center h-full rounded-b-3xl overflow-y-auto bg-white text-black px-4 lg:px-16  `}>
         <div className={`flex-1 flex flex-col justify-center gap-12`}>
@@ -21,7 +24,7 @@ const HomePage = () => {
                 animate={"enter"}
                 variants={variants}
                 transition={{
-                    duration: 0.5, ease: [0.83, 0, 0.17, 1]
+                    duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: delayDefault + 0.100
                 }}
                 className={` text-2xl md:text-4xl lg:text-5xl tracking-[-0.055em]  font-light`}>
                 Hello! This is Nikhil Ganireddy<IconLine className={`inline-flex text-black`}/>a passionate UI designer
@@ -35,7 +38,7 @@ const HomePage = () => {
                 animate={"enter"}
                 variants={variants}
                 transition={{
-                    duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.15
+                    duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.175 + delayDefault + 0.125
                 }}
                 className={`text-lg md:text-xl lg:text-3xl text-neutral-400 tracking-tighter`}>If you're interested in
                 working with me,
@@ -54,21 +57,21 @@ const HomePage = () => {
                            animate={"enter"}
                            variants={variants}
                            transition={{
-                               duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.175
+                               duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.150 + delayDefault
                            }}>Freelance
                 </motion.h4>
                 <motion.h4 initial={"initial"}
                            animate={"enter"}
                            variants={variants}
                            transition={{
-                               duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.2
+                               duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.175 + delayDefault
                            }}>UI Designer
                 </motion.h4>
                 <motion.h4 initial={"initial"}
                            animate={"enter"}
                            variants={variants}
                            transition={{
-                               duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.225
+                               duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.200 + delayDefault
                            }}>Full stack developer
                 </motion.h4>
             </div>
@@ -78,14 +81,14 @@ const HomePage = () => {
                                animate={"enter"}
                                variants={variants}
                                transition={{
-                                   duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.25
+                                   duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.225 + delayDefault
                                }}>Based in
                     </motion.h4>
                     <motion.h4 initial={"initial"}
                                animate={"enter"}
                                variants={variants}
                                transition={{
-                                   duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.275
+                                   duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.250 + delayDefault
                                }}>India
                     </motion.h4>
                 </div>
@@ -94,17 +97,18 @@ const HomePage = () => {
                                animate={"enter"}
                                variants={variants}
                                transition={{
-                                   duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.3
+                                   duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.275 + delayDefault
                                }}>Get in touch
                     </motion.h4>
-                    <motion.a initial={"initial"}
-                              animate={"enter"}
-                              variants={variants}
-                              transition={{
-                                  duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.325
-                              }} href="mailto:email@example.com"
-                              className={`font-normal text-sm md:text-base duration-200 ease-in transition-colors hover:text-orange-500 `}>nikhilganireddy@yahoo.com
-                    </motion.a>
+                    <motion.h4 initial={"initial"}
+                               animate={"enter"}
+                               variants={variants}
+                               transition={{
+                                   duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.300 + delayDefault
+                               }}
+                               className={`font-normal text-sm md:text-base duration-200 ease-in transition-colors hover:text-orange-500 `}>
+                        <a href="mailto:email@example.com">nikhilganireddy@yahoo.com</a>
+                    </motion.h4>
                 </div>
             </div>
         </div>
@@ -112,14 +116,3 @@ const HomePage = () => {
 }
 
 export default HomePage
-
-
-export function MaskText() {
-    return (<div className={styles.body}>
-        {phrases.map((phrase, index) => {
-            return <div key={index} className={styles.lineMask}>
-                <p>{phrase}</p>
-            </div>
-        })}
-    </div>)
-}

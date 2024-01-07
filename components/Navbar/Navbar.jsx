@@ -7,7 +7,7 @@ import NavLinks from "./NavLinks/NavLinks";
 import {GlobalContext} from "../../app/Context/contextApi";
 
 const Navbar = () => {
-    const {isActive, setIsActive}= useContext(GlobalContext)
+    const {isActive, setIsActive} = useContext(GlobalContext)
 
     const variants = {
         open: {
@@ -27,12 +27,36 @@ const Navbar = () => {
         }
     }
 
+    const variants2 = {
+        initial: {
+            y: "-20px", opacity: 0
+        }, enter: {
+            y: 0, opacity: 1
+        }
+    }
+
     return <div
-        className={`bg-white text-black w-full flex justify-between items-center px-4 lg:px-16 h-full min-h-[100px]`}>
+        className={`bg-white text-black w-full flex justify-between items-center px-4 lg:px-16 min-h-[px] h-[95px] lg:h-[150px] relative`}>
         <Link href={"/"} className={`w-max font-semibold text-base lg:text-lg tracking-tight `}>
-            <h1 className={`w-fit`}>Nikhil&nbsp;Ganireddy</h1>
+            <motion.h1
+                initial={"initial"}
+                animate={"enter"}
+                variants={variants2}
+                transition={{
+                    duration: 0.5, ease: [0.83, 0, 0.17, 1]
+                }}
+                className={`w-fit`}>Nikhil&nbsp;Ganireddy
+            </motion.h1>
         </Link>
-        <div className={`fixed w-full right-4 lg:right-10`}>
+        <motion.div
+            className={`fixed w-full right-4 lg:right-10`}
+            initial={"initial"}
+            animate={"enter"}
+            variants={variants2}
+            transition={{
+                duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.1
+            }}
+        >
             <motion.div
 
                 variants={variants}
@@ -47,7 +71,7 @@ const Navbar = () => {
                 </AnimatePresence>
             </motion.div>
             < NavButton isActive={isActive} setIsActive={setIsActive}/>
-        </div>
+        </motion.div>
     </div>
 }
 

@@ -1,6 +1,5 @@
 import {Inter} from 'next/font/google'
 import '../globals.css'
-import Navbar from "../../components/Navbar/Navbar";
 import {GlobalContextProvider} from "../Context/contextApi";
 
 const inter = Inter({subsets: ['latin']})
@@ -13,14 +12,9 @@ export default function RootLayout({
                                        children,
                                    }) {
     return (<html lang="en">
-    <body className={`bg-black text-white flex flex-col h-screen ${inter.className}`}>
+    <body className={`bg-black text-white h-screen ${inter.className}`}>
     <GlobalContextProvider>
-        <div className={`h-[95px] lg:h-[150px] relative`}>
-            <Navbar/>
-        </div>
-        <div className={`flex-1`}>
-            {children}
-        </div>
+        {children}
     </GlobalContextProvider>
     </body>
     </html>)
