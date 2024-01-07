@@ -13,8 +13,8 @@ const Navbar = () => {
         open: {
             maxWidth: 500,
             width: "97%",
-            height: 550,
-            top: "235px",
+            height: 450,
+            top: "185px",
             right: "-10px",
             transition: {duration: 0.7, ease: [0.83, 0, 0.17, 1]}
         }, closed: {

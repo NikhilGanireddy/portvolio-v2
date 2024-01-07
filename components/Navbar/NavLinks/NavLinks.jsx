@@ -4,9 +4,11 @@ import Link from "next/link";
 import {footerlinks, links} from "./index";
 import {useContext} from "react";
 import {GlobalContext} from "../../../app/Context/contextApi";
+import {usePathname} from "next/navigation";
 
 const NavLinks = () => {
     const {isActive, setIsActive} = useContext(GlobalContext)
+    const pathname = usePathname()
 
     const perspective = {
         initial: {
@@ -34,7 +36,7 @@ const NavLinks = () => {
 
     return <div className={` text-neutral-200 p-4 w-full h-full box-border pt-24 px-10 pb-10 space-y-12`}>
         <div className={` flex flex-col justify-center gap-6`}>
-            {links.map((link, index) => <div
+            {links.map((link, index) => <>{pathname !== link.href && <div
                 key={index}
                 className={` perspective-class`}
             >
@@ -51,12 +53,12 @@ const NavLinks = () => {
                         key={index}
                         onClick={() => setIsActive(!isActive)}
                         className={`text-xl lg:text-3xl hover:text-orange-500 transition-all duration-200 `}
-
                     >
                         {link.title}
                     </Link>
                 </motion.div>
-            </div>)}
+            </div>}
+            </>)}
         </div>
 
         <div className={` flex  justify-start items-center gap-6 flex-wrap`}>
