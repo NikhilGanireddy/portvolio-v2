@@ -49,7 +49,7 @@ const Navbar = () => {
             </motion.h1>
         </Link>
         <motion.div
-            className={`fixed w-full right-4 lg:right-10`}
+            className={`fixed md:relative w-full right-4 lg:right-5`}
             initial={"initial"}
             animate={"enter"}
             variants={variants2}

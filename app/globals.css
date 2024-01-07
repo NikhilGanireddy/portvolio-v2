@@ -35,3 +35,8 @@
     perspective: 120px;
     perspective-origin: bottom;
 }
+::selection{
+    color: white;
+    background: #000;
+}
+
