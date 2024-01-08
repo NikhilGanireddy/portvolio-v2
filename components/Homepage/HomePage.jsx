@@ -17,7 +17,7 @@ const HomePage = () => {
 
 
     return <div
-        className={`flex flex-col justify-center items-center h-full min-h-full rounded-b-3xl overflow-y-hidden bg-neutral-200 text-black px-4 lg:px-16 pb-2 lg:pb-4 `}>
+        className={`flex flex-col justify-center items-center h-full min-h-full rounded-b-3xl overflow-y-auto bg-neutral-200 text-black px-4 lg:px-16 pb-2 lg:pb-4 `}>
         <div className={`flex-1 flex flex-col justify-center gap-12`}>
             <motion.p
                 initial={"initial"}
