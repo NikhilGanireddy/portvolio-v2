@@ -28,7 +28,8 @@ const AboutPage = () => {
                 <h1
                     className={`text-4xl lg:text-5xl tracking-[-0.055em]  font-normal`}>About</h1>
                 <Image
-                    className={` aspect-square w-20 h-20 lg:w-40 lg:h-40 rounded-full lg:rounded-3xl `} src={nikhil}
+                    className={` shadow-black aspect-square w-20 h-20 lg:w-40 lg:h-40 rounded-full lg:rounded-3xl `}
+                    src={nikhil}
                     alt={"Profile Pic"} width={811} height={811}/>
             </motion.div>
             <div className={` w-full flex flex-col lg:flex-row gap-4`}>

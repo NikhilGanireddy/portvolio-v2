@@ -36,7 +36,7 @@ const Navbar = () => {
     }
 
     return <div
-        className={`bg-neutral-200 rounded-t-3xl text-black w-full flex justify-between items-center px-4 lg:px-16 min-h-[px] h-[95px] lg:h-[150px] relative`}>
+        className={`z-30 bg-neutral-200 rounded-t-3xl text-black w-full flex justify-between items-center px-4 lg:px-16 min-h-[px] h-[95px] lg:h-[150px] relative`}>
         <Link href={"/"} className={`w-max font-semibold text-base lg:text-lg tracking-tight `}>
             <motion.h1
                 initial={"initial"}

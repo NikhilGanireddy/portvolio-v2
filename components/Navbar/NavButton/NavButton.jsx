@@ -4,7 +4,7 @@ import PerspectiveText from "../../PerspectiveText";
 
 const NavButton = ({isActive, setIsActive}) => {
     return <div
-        className={` h-[50px] w-[100px] rounded-3xl right-0 cursor-pointer absolute top-1/2 -translate-y-1/2 overflow-hidden`}
+        className={`z-30 h-[50px] w-[100px] rounded-3xl right-0 cursor-pointer absolute top-1/2 -translate-y-1/2 overflow-hidden`}
         onClick={() => setIsActive(!isActive)}
     >
         <motion.div
