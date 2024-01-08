@@ -2,11 +2,10 @@
 import Navbar from "../../../components/Navbar/Navbar";
 import {motion} from "framer-motion";
 import useMousePosition from "../../../utils/cursor";
-import AboutPage from "../../../components/AboutPage/AboutPage";
 
 const Page = () => {
     const {x, y} = useMousePosition()
-    return <div className={`h-full min-h-screen flex flex-col relative overflow-y-auto overflow-x-hidden`}>
+    return <div className={`h-full min-h-screen flex flex-col relative overflow-x-hidden overflow-y-auto`}>
         <motion.div
             initial={{
                 translateX: "0", translateY: "0", opacity: 0
@@ -30,7 +29,7 @@ const Page = () => {
             <Navbar/>
         </div>
         <div className={`flex-1`}>
-            <AboutPage/>
+            Skills
         </div>
     </div>
 
