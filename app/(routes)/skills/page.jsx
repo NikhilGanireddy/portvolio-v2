@@ -12,10 +12,10 @@ const Page = () => {
                 translateX: "0", translateY: "0", opacity: 0
             }}
             animate={{
-                translateX: x - 40, translateY: y - 40, opacity: 1,
+                translateX: x - 32, translateY: y - 32, opacity: 1,
             }}
             transition={{type: "tween", ease: "backOut", duration: 0.3}}
-            className={`hidden md:inline-flex md:fixed md:w-20 md:h-20 md:border-[1px] md:border-black md:bg-transparent md:rounded-full md:z-50 pointer-events-none `}/>
+            className={`hidden md:inline-flex md:fixed md:w-16 md:h-16 md:border-[1px] md:border-black md:bg-transparent md:rounded-full md:z-50 pointer-events-none `}/>
         <motion.div
             initial={{
                 translateX: "0", translateY: "0", opacity: 0

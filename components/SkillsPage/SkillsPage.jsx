@@ -7,7 +7,6 @@ import {HoverCard, HoverCardContent, HoverCardTrigger} from "../ui/hover-card";
 import {Progress} from "../ui/progress";
 
 const SkillsPage = () => {
-    const delayDefault = 0.025
     const variants = {
         initial: {
             y: "50px", opacity: 0
@@ -25,12 +24,19 @@ const SkillsPage = () => {
                 animate={"enter"}
                 variants={variants}
                 transition={{
-                    duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: delayDefault + 0.100
+                    duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.2
                 }}
                 className={`h-max w-full flex justify-between items-center border-b border-b-neutral-400 pb-8 lg:pb-12`}>
                 <h1 className={`text-4xl lg:text-5xl tracking-[-0.055em] font-normal`}>Skills</h1>
             </motion.div>
-            <div className={` w-full flex flex-col gap-20 `}>
+            <motion.div
+                initial={"initial"}
+                animate={"enter"}
+                variants={variants}
+                transition={{
+                    duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.3
+                }}
+                className={` w-full flex flex-col gap-20 `}>
                 <Tabs defaultValue="frontend"
                       className="min-h-[240px] flex-col lg:flex-row w-full flex justify-between items-center gap-6 lg:gap-16">
                     <TabsList
@@ -44,7 +50,13 @@ const SkillsPage = () => {
                             <span>{skill.title}</span>
                         </TabsTrigger>)}
                     </TabsList>
-                    <div
+                    <motion.div
+                        initial={"initial"}
+                        animate={"enter"}
+                        variants={variants}
+                        transition={{
+                            duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.3
+                        }}
                         className={`flex flex-col w-full lg:w-3/5 h-full text-black border border-neutral-400 rounded-3xl p-4 lg:p-6`}>
                         {skills.map((skill, index) => <TabsContent className={``} value={skill.title}
                                                                    key={index}>
@@ -53,35 +65,49 @@ const SkillsPage = () => {
                                 animate={"enter"}
                                 variants={variants}
                                 transition={{
-                                    duration: 0.5,
-                                    ease: [0.83, 0, 0.17, 1],
-                                    delay: delayDefault + 0.125 + (5 * 0.05) + 0.025
+                                    duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.3
                                 }}
                                 className={` capitalize border-b border-b-neutral-400 pb-2`}>
                                 {skill.title}
                             </motion.h1>
                             <div className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full pt-4`}>
-                                {skill.skills.map((skillLink, i) => <HoverCard
+                                {skill.skills.map((skillLink, i) => <motion.div
+                                    initial={"initial"}
+                                    animate={"enter"}
+                                    variants={variants}
+                                    transition={{
+                                        duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.3
+                                    }}
+                                ><HoverCard
 
                                     key={i}
                                     openDelay={0.1}
                                     closeDelay={0.1}>
-                                    <HoverCardTrigger
-                                        className={`flex flex-row items-center justify-start space-x-2 px-6 border-neutral-400 border py-3 cursor-pointer rounded-lg truncate hover:bg-black hover:text-neutral-200 duration-200 transition-all text-sm md:text-base leading-6 md:leading-8`}>
-                                        <span>{skillLink.icon}</span>
-                                        <span>{skillLink.label}</span>
-                                    </HoverCardTrigger>
+                                    <motion.div
+                                        initial={"initial"}
+                                        animate={"enter"}
+                                        variants={variants}
+                                        transition={{
+                                            duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.3 + i * 0.1
+                                        }}
+                                    >
+                                        <HoverCardTrigger
+                                            className={`flex flex-row items-center justify-start space-x-2 px-6 border-neutral-400 border py-3 cursor-pointer rounded-lg truncate hover:bg-black hover:text-neutral-200 duration-200 transition-all text-sm md:text-base leading-6 md:leading-8`}>
+                                            <span>{skillLink.icon}</span>
+                                            <span>{skillLink.label}</span>
+                                        </HoverCardTrigger>
+                                    </motion.div>
                                     <HoverCardContent
-                                        className={`text-sm md:text-base leading-6 md:leading-8 font-light w-full bg-neutral-200 flex flex-col justify-between gap-y-1`}>
+                                        className={`text-xs md:text-sm leading-6 md:leading-8 font-light w-full bg-neutral-200 flex flex-col justify-between gap-y-1`}>
                                         {skillLink.level ? <><span>Proficiency Level - {skillLink.level}%</span>
                                             <Progress value={skillLink.level}/></> : <>{skillLink.toolType}</>}
                                     </HoverCardContent>
-                                </HoverCard>)}
+                                </HoverCard></motion.div>)}
                             </div>
                         </TabsContent>)}
-                    </div>
+                    </motion.div>
                 </Tabs>
-            </div>
+            </motion.div>
         </div>
     </div>
 }
