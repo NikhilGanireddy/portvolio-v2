@@ -23,6 +23,7 @@ import Postman from "../../icons/Tools/Postman";
 import Vscode from "../../icons/Tools/VsCode";
 import Webstorm from "../../icons/Tools/Webstorm";
 import Intellijidea from "../../icons/Tools/Intellij";
+import Styledcomponents from "../../icons/FrontEnd/StyledComponents";
 
 
 const skills = [{
@@ -33,7 +34,11 @@ const skills = [{
     }, {
         label: "TypeScript", icon: <Typescript className={`w-6 h-6 font-light`}/>, level: 75
     }, {
+        label: "Redux", icon: <Redux className={`w-6 h-6 font-light`}/>, toolType: "State Management Tool"
+    }, {
         label: "Tailwind", icon: <Tailwindcss className={`w-6 h-6 font-light`}/>, level: 95
+    }, {
+        label: "Styled Comps", icon: <Styledcomponents className={`w-6 h-6 font-light`}/>, level: 90
     }, {
         label: "Framer Motion", icon: <Framer className={`w-6 h-6 font-light`}/>, level: 90
     }, {
@@ -62,8 +67,6 @@ const skills = [{
 }, {
     title: "tools", icon: <Tools className={`w-6 h-6 lg:w-8 lg:h-8 font-light`}/>, skills: [{
         label: "Vercel", icon: <Vercel className={`w-6 h-6 font-light`}/>, toolType: "Deployement Tool"
-    }, {
-        label: "Redux", icon: <Redux className={`w-6 h-6 font-light`}/>, toolType: "State Management Tool"
     }, {
         label: "GitHub", icon: <Github className={`w-6 h-6 font-light`}/>, toolType: "Version Control Tool"
     }, {

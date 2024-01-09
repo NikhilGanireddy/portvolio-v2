@@ -18,7 +18,7 @@ const SkillsPage = () => {
     return <div
         className={`flex flex-col justify-center items-center h-full min-h-full  rounded-b-3xl overflow-y-auto overflow-x-hidden bg-neutral-200 text-black px-4 lg:px-16 pb-2 lg:pb-4`}>
         <div
-            className={` h-full w-full flex flex-col justify-end pt-24 py-12 lg:py-24 items-center gap-4 lg:gap-8`}>
+            className={` h-full w-full flex flex-col justify-end pt-24 py-12  items-center gap-4 lg:gap-8`}>
             <motion.div
                 initial={"initial"}
                 animate={"enter"}
@@ -38,9 +38,9 @@ const SkillsPage = () => {
                 }}
                 className={` w-full flex flex-col gap-20 `}>
                 <Tabs defaultValue="frontend"
-                      className="min-h-[240px] flex-col lg:flex-row w-full flex justify-between items-center gap-6 lg:gap-16">
+                      className="min-h-[310px] flex-col lg:flex-row w-full flex justify-between items-center gap-6 lg:gap-16">
                     <TabsList
-                        className={`grid grid-cols-2 gap-4 lg:gap-6 w-full lg:w-2/5 h-full rounded-3xl bg-transparent`}>
+                        className={`grid grid-cols-2 gap-4 lg:gap-6 w-full lg:w-2/5 h-full rounded-3xl bg-transparent lg:py-10 py-0`}>
                         {skills.map((skill, index) => <TabsTrigger
 
                             className={`flex items-center justify-center space-x-2 font-light text-black relative capitalize text-sm group lg:text-base rounded-xl border border-neutral-400 h-16 lg:h-24 data-[state=active]:bg-black data-[state=active]:text-neutral-200 data-[state=active]:border-black transition-all ease-in-out duration-200`}
@@ -92,7 +92,7 @@ const SkillsPage = () => {
                                         }}
                                     >
                                         <HoverCardTrigger
-                                            className={`flex flex-row items-center justify-start space-x-2 px-6 border-neutral-400 border py-3 cursor-pointer rounded-lg truncate hover:bg-black hover:text-neutral-200 duration-200 transition-all text-sm md:text-base leading-6 md:leading-8`}>
+                                            className={`w-full flex flex-row items-center justify-center  space-x-2 px-6 border-neutral-400 border py-3 cursor-pointer rounded-lg truncate hover:bg-black hover:text-neutral-200 duration-200 transition-all text-sm md:text-base leading-6 md:leading-8`}>
                                             <span>{skillLink.icon}</span>
                                             <span>{skillLink.label}</span>
                                         </HoverCardTrigger>
