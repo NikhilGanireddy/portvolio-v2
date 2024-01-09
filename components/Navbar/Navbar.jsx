@@ -5,6 +5,7 @@ import {useContext} from "react";
 import NavButton from "./NavButton/NavButton";
 import NavLinks from "./NavLinks/NavLinks";
 import {GlobalContext} from "../../app/Context/contextApi";
+import PerspectiveText from "../PerspectiveText";
 
 const Navbar = () => {
     const {isActive, setIsActive} = useContext(GlobalContext)
@@ -45,9 +46,11 @@ const Navbar = () => {
                 transition={{
                     duration: 0.5, ease: [0.83, 0, 0.17, 1]
                 }}
-                className={`w-fit font-normal`}>Nikhil&nbsp;Ganireddy
+                className={`btns w-fit font-normal`}>
+                <PerspectiveText text={`Nikhil Ganiredy`}/>
             </motion.h1>
         </Link>
+
         <motion.div
             className={`fixed md:relative w-full right-4 lg:right-5`}
             initial={"initial"}

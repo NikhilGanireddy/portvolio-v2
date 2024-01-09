@@ -1,8 +1,8 @@
 "use client"
 const PerspectiveText = ({text}) => {
-    return <div className={`perspective flex-col flex items-center justify-center relative w-full h-full`}>
-        <p className={`perspective-first lg:text-sm text-xs font-normal `}>{text}</p>
-        <p className={` absolute perspective-second lg:text-sm text-xs font-normal `}>{text}</p>
+    return <div className={`perspective flex-col flex items-center justify-center relative w-max h-full`}>
+        <p className={`perspective-first lg:text-base text-sm font-normal `}>{text}</p>
+        <p className={` absolute perspective-second lg:text-base text-sm font-normal `}>{text}</p>
     </div>
 }
 

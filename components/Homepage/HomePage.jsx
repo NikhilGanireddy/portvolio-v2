@@ -4,6 +4,7 @@ import {motion} from "framer-motion";
 import Link from "next/link";
 import IconLine from "../../icons/LineIcon";
 import IconArrowRight from "../../icons/ArrowRight";
+import PerspectiveText from "../PerspectiveText";
 
 const HomePage = () => {
     const delayDefault = 0.025
@@ -114,7 +115,8 @@ const HomePage = () => {
                             transition={{
                                 duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.325 + delayDefault
                             }}
-                            href="mailto:email@example.com">nikhilganireddy@yahoo.com
+                            href="mailto:email@example.com" className={`w-fit btns`}>
+                            <PerspectiveText text={`nikhilganireddy@yahoo.com`}/>
                         </motion.a>
                     </motion.h4>
                 </div>

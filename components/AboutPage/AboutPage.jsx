@@ -3,6 +3,7 @@
 import {motion} from "framer-motion";
 import nikhil from "/public/images/Nikhil_Ganireddy.jpg"
 import Image from "next/image";
+import PerspectiveText from "../PerspectiveText";
 
 const AboutPage = () => {
     const delayDefault = 0.025
@@ -78,7 +79,8 @@ const AboutPage = () => {
                         transition={{
                             duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.200 + delayDefault
                         }}
-                        href="mailto:email@example.com" className={`text-sm md:text-base`}>nikhilganireddy@yahoo.com
+                        href="mailto:email@example.com" className={`text-sm md:text-base btns w-fit`}>
+                        <PerspectiveText text={`nikhilganireddy@yahoo.com`}/>
                     </motion.a>
 
                 </div>
