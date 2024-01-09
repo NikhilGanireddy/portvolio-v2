@@ -25,7 +25,7 @@ const AboutPage = () => {
                 transition={{
                     duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: delayDefault + 0.100
                 }}
-                className={`h-max w-full flex justify-between items-center border-b border-b-neutral-300 pb-4 lg:pb-8`}>
+                className={`h-max w-full flex justify-between items-center border-b border-b-neutral-400 pb-4 lg:pb-8`}>
                 <h1
                     className={`text-4xl lg:text-5xl tracking-[-0.055em]  font-normal`}>About</h1>
                 <Image
