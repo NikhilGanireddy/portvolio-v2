@@ -41,7 +41,7 @@ const HomePage = () => {
                 transition={{
                     duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.175 + delayDefault + 0.125
                 }}
-                className={`font-light text-lg md:text-xl lg:text-3xl text-neutral-500 tracking-tighter`}>If you're
+                className={`font-light text-lg md:text-xl lg:text-2xl text-neutral-500 tracking-tighter`}>If you're
                 interested in
                 working with me,
                 <Link href={"/"}
