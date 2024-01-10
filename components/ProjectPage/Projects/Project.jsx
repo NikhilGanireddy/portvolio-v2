@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {motion} from "framer-motion";
 
-const Project = ({title, id, href, image, skills}) => {
+const Project = ({title, id, href, image, skills, height, width}) => {
 
     const variants = {
         initial: {
@@ -57,7 +57,7 @@ const Project = ({title, id, href, image, skills}) => {
                     duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.7
                 }}
                 className={`rounded-xl overflow-hidden`}>
-                <Image src={image} alt={title} height={undefined} width={undefined}
+                <Image src={image} alt={title} height={height} width={width} priority={true}
                        className={`min-h-[425px] object-cover object-center aspect-square lg:aspect-video scale-100 group-hover:scale-105 transition-all duration-200`}/>
             </motion.div>
             <div className={`px-1 py-2 flex flex-col gap-2`}>

@@ -30,11 +30,12 @@ const ProjectPage = () => {
                 {projects.map((project, index) => <Project
                     key={index}
                     title={project.title}
-                    description={project.description}
                     href={project.href}
                     image={`${project.image}`}
                     id={project.id}
                     skills={project.skills}
+                    height={project.height}
+                    width={project.width}
                 />)}
             </div>
         </div>
