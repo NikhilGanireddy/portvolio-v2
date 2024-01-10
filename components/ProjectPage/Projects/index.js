@@ -1,6 +1,6 @@
-import goku from "/public/images/gokuu.png"
-import kuce from "/public/images/kuce.png"
-import aifusion from "/public/images/aifusion.png"
+import goku from "../../../public/images/gokuu.png"
+import kuce from "../../../public/images/kuce.png"
+import aifusion from "../../../public/images/aifusion.png"
 
 const projects = [{
     id: 1,
