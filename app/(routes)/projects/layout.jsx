@@ -1,3 +1,5 @@
+import {Analytics} from "@vercel/analytics/react";
+
 export const metadata = {
     title: 'thegdp - Projects', description: "Project page of Nikhil Ganireddy's portfolio website",
 }
@@ -5,5 +7,6 @@ export const metadata = {
 export default function ({children}) {
     return <>
         {children}
+        <Analytics/>
     </>
 }
