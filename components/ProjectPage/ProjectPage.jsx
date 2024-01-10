@@ -32,7 +32,7 @@ const ProjectPage = () => {
                     title={project.title}
                     description={project.description}
                     href={project.href}
-                    image={project.image}
+                    image={`${project.image}`}
                     id={project.id}
                     skills={project.skills}
                 />)}
