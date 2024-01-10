@@ -17,12 +17,12 @@ const NavButton = ({isActive, setIsActive}) => {
             className={`slider relative w-full h-full`}>
             <div
                 className={`btns w-full h-full bg-black text-neutral-200`}>
-                <PerspectiveText text={"MENU"}/>
+                <PerspectiveText text={"Menu"}/>
             </div>
 
             <div
                 className={`btns w-full h-full bg-neutral-200 text-black absolute top-full`}>
-                <PerspectiveText text={"CLOSE"}/>
+                <PerspectiveText text={"Close"}/>
             </div>
         </motion.div>
     </div>

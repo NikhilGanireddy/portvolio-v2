@@ -126,3 +126,10 @@
   perspective: 120px;
   perspective-origin: bottom;
 }
+
+.cards {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(5, 30rem);
+  gap: 4rem;
+}
