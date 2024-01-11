@@ -6,7 +6,8 @@ import ProjectPage from "../../../components/ProjectPage/ProjectPage";
 
 const Page = () => {
     const {x, y} = useMousePosition()
-    return <div className={`h-full min-h-screen flex flex-col relative overflow-y-auto overflow-x-hidden`}>
+    return <div
+        className={`h-full min-h-screen flex flex-col relative overflow-y-auto overflow-x-hidden scroll-smooth`}>
         <motion.div
             initial={{
                 translateX: "0", translateY: "0", opacity: 0

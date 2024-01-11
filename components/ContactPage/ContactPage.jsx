@@ -7,6 +7,18 @@ import {Textarea} from "../ui/textarea";
 import {Button} from "../ui/button";
 
 const ContactPage = () => {
+    function* nope(inc) {
+
+        yield 10 + 10 * inc;
+        yield inc + 10 + 11 * 10;
+        yield 11 + inc + 11 * 11;
+    }
+
+    var make = nope("110");
+
+
+    console.warn(make.next().value + make.next().value)
+
     const delayDefault = 0.025
     const variants = {
         initial: {
@@ -17,7 +29,7 @@ const ContactPage = () => {
     }
 
     return <div
-        className={`flex flex-col justify-center items-center h-full min-h-full  rounded-b-3xl overflow-y-auto  bg-neutral-200 text-black px-4 lg:px-16 pb-2 lg:pb-4`}>
+        className={`scroll-smooth flex flex-col justify-center items-center h-full min-h-full  rounded-b-3xl overflow-y-auto  bg-neutral-200 text-black px-4 lg:px-16 pb-2 lg:pb-4`}>
         <div className={` h-full w-full flex flex-col justify-end pt-24 py-12 lg:py-24 items-center gap-4 lg:gap-8`}>
             <motion.div
                 initial={"initial"}

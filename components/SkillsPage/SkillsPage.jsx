@@ -57,7 +57,7 @@ const SkillsPage = () => {
                         transition={{
                             duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.3
                         }}
-                        className={`flex flex-col w-full lg:w-3/5 h-full text-black border border-neutral-400 rounded-3xl p-4 lg:p-6`}>
+                        className={`flex flex-col w-full lg:w-3/5 h-full text-black border border-neutral-400 rounded-3xl p-4 lg:p-6 `}>
                         {skills.map((skill, index) => <TabsContent className={``} value={skill.title}
                                                                    key={index}>
                             <motion.h1

@@ -9,7 +9,7 @@ const AboutPage = () => {
     const delayDefault = 0.025
     const variants = {
         initial: {
-            y: "50px", opacity: 0
+            y: "30px", opacity: 0
         }, enter: {
             y: 0, opacity: 1
         }
@@ -85,7 +85,6 @@ const AboutPage = () => {
 
                 </div>
             </div>
-
         </div>
 
     </div>

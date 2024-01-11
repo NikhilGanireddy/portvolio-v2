@@ -10,7 +10,7 @@ const HomePage = () => {
     const delayDefault = 0.025
     const variants = {
         initial: {
-            y: "50px", opacity: 0
+            y: "30px", opacity: 0
         }, enter: {
             y: 0, opacity: 1
         }
@@ -44,7 +44,7 @@ const HomePage = () => {
                 className={`font-light text-lg md:text-xl lg:text-2xl text-neutral-500 tracking-tighter`}>If you're
                 interested in
                 working with me,
-                <Link href={"/"}
+                <Link href={"/contact"}
                       className={`text-black ml-2 group hover:text-orange-500 ease-in duration-200 transition-all`}>
                     let’s talk
                     <IconArrowRight
