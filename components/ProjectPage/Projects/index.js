@@ -2,8 +2,8 @@ const projects = [{
     id: 1,
     title: "Threads App",
     description: "A groundbreaking SaaS platform addressing limitations in ChatGPT. Integrating image generation, video\n" + "creation, and advanced text-based AI, it enhances creative processes with a user-friendly interface. Offering five free AI prompts and a subscription model, the toolbox bridges the gap between human\n" + "creativity and machine intelligence",
-    href: "/",
-    image: "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/gokuu.png",
+    href: "",
+    image: "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/threads.png",
     height: "5120",
     width: "2880",
     skills: ["Next JS", "ReactJs", "Tailwindcss", "MongoDB", "Typescript", "Clerk"]
@@ -30,7 +30,7 @@ const projects = [{
     title: "Rudramadevi - KUCE Hostel Management App",
     description: "A groundbreaking SaaS platform addressing limitations in ChatGPT. Integrating image generation, video\n" + "creation, and advanced text-based AI, it enhances creative processes with a user-friendly interface. Offering five free AI prompts and a subscription model, the toolbox bridges the gap 5between human\n" + "creativity and machine intelligence",
     href: "https://token-server.netlify.app",
-    image: "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/kuce.png",
+    image: "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/ruddramadevi.png",
     height: "2532",
     width: "1524",
     skills: ["Next JS", "ReactJs", "Tailwindcss", "MongoDB", "Next Auth"]
@@ -38,7 +38,7 @@ const projects = [{
     id: 2,
     title: "thegdp - Blog",
     description: "A groundbreaking SaaS platform addressing limitations in ChatGPT. Integrating image generation, video\n" + "creation, and advanced text-based AI, it enhances creative processes with a user-friendly interface. Offering five free AI prompts and a subscription model, the toolbox bridges the gap between human\n" + "creativity and machine intelligence",
-    href: "/",
+    href: "",
     image: "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/gokuu.png",
     height: "5120",
     width: "2880",
