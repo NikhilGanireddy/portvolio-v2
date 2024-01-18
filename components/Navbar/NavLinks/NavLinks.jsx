@@ -52,7 +52,7 @@ const NavLinks = () => {
                         href={link.href}
                         key={index}
                         onClick={() => setIsActive(!isActive)}
-                        className={`text-xl lg:text-3xl hover:text-orange-500 transition-all duration-200 `}
+                        className={`text-2xl lg:text-3xl hover:text-orange-500 transition-all duration-200 `}
                     >
                         {link.title}
                     </Link>

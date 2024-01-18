@@ -14,7 +14,8 @@ const ProjectPage = () => {
     }
     return <div
         className={`flex flex-col justify-center items-center h-full min-h-full  rounded-b-3xl overflow-y-auto  bg-neutral-200 text-black px-4 lg:px-16 pb-2 lg:pb-4`}>
-        <div className={` h-full w-full flex flex-col justify-end pt-36 py-12 lg:py-24 items-center gap-4 lg:gap-8`}>
+        <div
+            className={` h-full w-full flex flex-col justify-end pt-36 py-12 lg:py-24 lg:pt-48 items-center gap-4 lg:gap-8`}>
             <motion.div
                 initial={"initial"}
                 animate={"enter"}
