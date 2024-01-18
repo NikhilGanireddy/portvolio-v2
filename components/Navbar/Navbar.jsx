@@ -47,7 +47,7 @@ const Navbar = () => {
                     duration: 0.5, ease: [0.83, 0, 0.17, 1]
                 }}
                 className={`btns w-fit font-normal`}>
-                <PerspectiveText text={`Nikhil Ganiredy`}/>
+                <PerspectiveText text={`Nikhil Ganireddy`}/>
             </motion.h1>
         </Link>
 
