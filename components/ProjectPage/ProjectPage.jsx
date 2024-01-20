@@ -27,7 +27,7 @@ const ProjectPage = () => {
                 <h1
                     className={`text-4xl lg:text-5xl tracking-[-0.055em]  font-normal`}>Projects</h1>
             </motion.div>
-            {/* <div className={`w-full grid grid-cols-1 lg:grid-cols-2 gap-12`}>
+            <div className={`w-full grid grid-cols-1 lg:grid-cols-2 gap-12`}>
                 {projects.map((project, index) => <Project
                     key={index}
                     title={project.title}
@@ -38,7 +38,7 @@ const ProjectPage = () => {
                     height={project.height}
                     width={project.width}
                 />)}
-            </div> */}
+            </div>
         </div>
 
     </div>
