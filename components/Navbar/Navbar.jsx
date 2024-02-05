@@ -42,6 +42,7 @@ const Navbar = () => {
             <motion.h1
                 initial={"initial"}
                 animate={"enter"}
+                enter={"enter"}
                 variants={variants2}
                 transition={{
                     duration: 0.5, ease: [0.83, 0, 0.17, 1]

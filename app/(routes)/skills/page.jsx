@@ -3,10 +3,17 @@ import Navbar from "../../../components/Navbar/Navbar";
 import {motion} from "framer-motion";
 import useMousePosition from "../../../utils/cursor";
 import SkillsPage from "../../../components/SkillsPage/SkillsPage";
+import {useContext} from "react";
+import {GlobalContext} from "../../Context/contextApi";
 
 const Page = () => {
+    const {isActive, setIsActive} = useContext(GlobalContext)
+
     const {x, y} = useMousePosition()
-    return <div className={`h-full min-h-screen flex flex-col relative overflow-x-hidden overflow-y-auto`}>
+    return <div className={`h-full min-h-screen flex flex-col relative overflow-x-hidden overflow-y-auto`}
+                onClick={() => {
+                    isActive ? setIsActive(!isActive) : null
+                }}>
         <motion.div
             initial={{
                 translateX: "0", translateY: "0", opacity: 0

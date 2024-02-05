@@ -3,10 +3,16 @@ import HomePage from "../../components/Homepage/HomePage";
 import Navbar from "../../components/Navbar/Navbar";
 import {motion} from "framer-motion";
 import useMousePosition from "../../utils/cursor";
+import {useContext} from "react";
+import {GlobalContext} from "../Context/contextApi";
 
 export default function Home() {
+
+    const {isActive, setIsActive} = useContext(GlobalContext)
     const {x, y} = useMousePosition()
-    return (<div className={`h-full min-h-screen flex flex-col relative overflow-hidden`}>
+    return (<div className={`h-full min-h-screen flex flex-col relative overflow-hidden`} onClick={() => {
+        isActive ? setIsActive(!isActive) : null
+    }}>
         <motion.div
             initial={{
                 translateX: "0", translateY: "0", opacity: 0
