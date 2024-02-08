@@ -2,8 +2,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import {motion} from "framer-motion";
+import {Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from "../../ui/carousel";
+import IconArrowRight from "../../../icons/ArrowRight";
 
-const Project = ({title, id, href, image, skills, height, width}) => {
+const Project = ({title, id, href, images, skills, height, width}) => {
 
     const variants = {
         initial: {
@@ -56,11 +58,29 @@ const Project = ({title, id, href, image, skills, height, width}) => {
                 transition={{
                     duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.7
                 }}
-                className={`rounded-xl overflow-hidden`}>
-                <Image src={image} alt={title} height={height} width={width} priority={true}
-                       className={`min-h-[425px] object-cover object-center aspect-square lg:aspect-video scale-100 group-hover:scale-105 transition-all duration-200`}/>
+                className={`rounded-xl overflow-hidden `}>
+                <Carousel className={`w-full h-full relative overflow-hidden`} opts={{
+                    loop: true, align: "center"
+                }}>
+                    <h1 className={`absolute text-neutral-200 z-10 top-1 right-1 text-sm px-2 py-1 flex gap-2 justify-center items-center`}>
+                        <span>Drag to see the pics</span>
+                        <IconArrowRight
+                            className={` inline-flex`}/>
+                    </h1>
+                    <CarouselContent>
+                        {images.map((image, index) => <CarouselItem className={`w-full h-full`} key={index}><Image
+                            src={image} alt={title}
+                            height={height} width={width}
+                            priority={true}
+                            className={`min-h-[425px] object-cover rounded-2xl object-center aspect-square lg:aspect-video scale-100 group-hover:scale-105 transition-all duration-200`}/></CarouselItem>)}
+                    </CarouselContent>
+                    <CarouselPrevious/>
+                    <CarouselNext/>
+                </Carousel>
+
+
             </motion.div>
-            <div className={`px-1 py-2 flex flex-col gap-2`}>
+            <div className={`px-1 py-2 flex flex-col gap-2 overflow-hidden`}>
                 <motion.h1
 
                     initial={"initial"}

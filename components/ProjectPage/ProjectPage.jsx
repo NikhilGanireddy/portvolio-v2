@@ -32,7 +32,7 @@ const ProjectPage = () => {
                     key={index}
                     title={project.title}
                     href={project.href}
-                    image={`${project.image}`}
+                    images={project.images}
                     id={project.id}
                     skills={project.skills}
                     height={project.height}
