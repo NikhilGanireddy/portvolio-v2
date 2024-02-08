@@ -70,7 +70,7 @@ const projects = [{
     id: 3,
     title: "RUDRAMADEVI - KUCE GIRL'S HOSTEL",
     description: "A groundbreaking SaaS platform addressing limitations in ChatGPT. Integrating image generation, video\n" + "creation, and advanced text-based AI, it enhances creative processes with a user-friendly interface. Offering five free AI prompts and a subscription model, the toolbox bridges the gap 5between human\n" + "creativity and machine intelligence",
-    href: "/",
+    href: "https://rudramadevi.vercel.app/",
     images: ["https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/rudramadevi/1.png", "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/rudramadevi/2.png", "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/rudramadevi/3.png"],
     video: "",
     height: "5120",
