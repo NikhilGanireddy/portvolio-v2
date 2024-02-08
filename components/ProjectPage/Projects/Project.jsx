@@ -60,9 +60,9 @@ const Project = ({title, id, href, images, skills, height, width}) => {
                 }}
                 className={`rounded-xl overflow-hidden `}>
                 <Carousel className={`w-full h-full relative overflow-hidden`} opts={{
-                    loop: true, align: "center"
+                    loop: true, align: "center", fit: "cover"
                 }}>
-                    <h1 className={`absolute text-neutral-200 z-10 top-1 right-1 text-sm px-2 py-1 flex gap-2 justify-center items-center`}>
+                    <h1 className={`absolute text-black backdrop-blur-2xl z-10 top-0 rounded-full right-0 text-sm px-4 py-2 flex gap-2 justify-center items-center`}>
                         <span>Drag to see the pics</span>
                         <IconArrowRight
                             className={` inline-flex`}/>
