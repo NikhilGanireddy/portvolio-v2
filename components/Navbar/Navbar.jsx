@@ -62,7 +62,6 @@ const Navbar = () => {
             }}
         >
             <motion.div
-
                 variants={variants}
                 animate={isActive ? "open" : "closed"}
                 initial={"closed"}
