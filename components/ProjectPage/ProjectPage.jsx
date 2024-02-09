@@ -34,6 +34,7 @@ const ProjectPage = () => {
                     href={project.href}
                     images={project.images}
                     video={project.video}
+                    bg={project.bg}
                     id={project.id}
                     skills={project.skills}
                     height={project.height}

@@ -5,7 +5,7 @@ import {motion} from "framer-motion";
 import {Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from "../../ui/carousel";
 import IconArrowRight from "../../../icons/ArrowRight";
 
-const Project = ({title, id, href, images, skills, height, width}) => {
+const Project = ({title, id, href, images, bg, skills, height, width}) => {
 
     const variants = {
         initial: {
@@ -62,7 +62,7 @@ const Project = ({title, id, href, images, skills, height, width}) => {
                 <Carousel className={`w-full h-full relative overflow-hidden`} opts={{
                     loop: true, align: "center", fit: "cover"
                 }}>
-                    <h1 className={`absolute text-black backdrop-blur-2xl z-10 top-0 rounded-full right-0 text-sm px-4 py-2 flex gap-2 justify-center items-center`}>
+                    <h1 className={`absolute ${bg === true ? " text-black " : " text-white"}  backdrop-blur-2xl z-10 top-0 rounded-full right-0 text-sm px-4 py-2 flex gap-2 justify-center items-center`}>
                         <span>Drag to see the pics</span>
                         <IconArrowRight
                             className={` inline-flex`}/>
@@ -72,7 +72,7 @@ const Project = ({title, id, href, images, skills, height, width}) => {
                             src={image} alt={title}
                             height={height} width={width}
                             priority={true}
-                            className={`min-h-[425px] object-cover rounded-2xl object-center aspect-square lg:aspect-video scale-100 group-hover:scale-105 transition-all duration-200`}/></CarouselItem>)}
+                            className={`min-h-[450px] h-full object-cover rounded-2xl object-center aspect-square lg:aspect-video scale-100 group-hover:scale-105 transition-all duration-200`}/></CarouselItem>)}
                     </CarouselContent>
                     <CarouselPrevious/>
                     <CarouselNext/>

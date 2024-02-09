@@ -28,8 +28,8 @@ const HomePage = () => {
                     duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: delayDefault + 0.100
                 }}
                 className={` text-2xl md:text-4xl lg:text-5xl tracking-[-0.055em]  font-light`}>
-                Hello! This is Nikhil Ganireddy<IconLine className={`inline-flex text-black`}/>a passionate UI designer
-                and full-stack developer.
+                Hello! This is Nikhil Ganireddy<IconLine className={`inline-flex text-black`}/>a passionate full-stack
+                developer.
                 I seamlessly blend design and functionality to craft engaging digital experiences for
                 brands and users alike.
             </motion.p>

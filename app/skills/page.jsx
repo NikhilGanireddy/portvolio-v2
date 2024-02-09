@@ -1,20 +1,19 @@
 "use client"
-import Navbar from "../../../components/Navbar/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import {motion} from "framer-motion";
-import useMousePosition from "../../../utils/cursor";
-import ProjectPage from "../../../components/ProjectPage/ProjectPage";
+import useMousePosition from "../../utils/cursor";
+import SkillsPage from "../../components/SkillsPage/SkillsPage";
 import {useContext} from "react";
-import {GlobalContext} from "../../Context/contextApi";
+import {GlobalContext} from "../Context/contextApi";
 
 const Page = () => {
     const {isActive, setIsActive} = useContext(GlobalContext)
 
     const {x, y} = useMousePosition()
-    return <div
-        className={`h-full min-h-screen flex flex-col relative overflow-y-auto overflow-x-hidden scroll-smooth`}
-        onClick={() => {
-            isActive ? setIsActive(!isActive) : null
-        }}>
+    return <div className={`h-full min-h-screen flex flex-col relative overflow-x-hidden overflow-y-auto`}
+                onClick={() => {
+                    isActive ? setIsActive(!isActive) : null
+                }}>
         <motion.div
             initial={{
                 translateX: "0", translateY: "0", opacity: 0
@@ -37,8 +36,8 @@ const Page = () => {
         <div className={`h-[95px] lg:h-[150px] relative`}>
             <Navbar/>
         </div>
-        <div className={`flex-1`}>
-            <ProjectPage/>
+        <div className={` flex-1`}>
+            <SkillsPage/>
         </div>
     </div>
 

@@ -52,7 +52,7 @@ const AboutPage = () => {
                             duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.150 + delayDefault
                         }}
                         className={`text-sm md:text-base leading-6 md:leading-8`}>
-                        Hi I'm Nikhil Ganireddy, a computer science undergrad with a passion for programming.
+                        Hi I'm Nikhil Ganireddy, a computer science undergrad student with a passion for programming.
                         Transitioning from my academic journey, I've immersed myself in mastering
                         full-stack web development. The thrill of problem-solving is what fuels my enthusiasm, and I
                         specialize in React, Next.js, Node.js, and MongoDB. Proficient in TypeScript, and

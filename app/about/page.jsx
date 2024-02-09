@@ -1,10 +1,10 @@
 "use client"
-import Navbar from "../../../components/Navbar/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import {motion} from "framer-motion";
-import useMousePosition from "../../../utils/cursor";
-import AboutPage from "../../../components/AboutPage/AboutPage";
+import useMousePosition from "../../utils/cursor";
+import AboutPage from "../../components/AboutPage/AboutPage";
 import {useContext} from "react";
-import {GlobalContext} from "../../Context/contextApi";
+import {GlobalContext} from "../Context/contextApi";
 
 const Page = () => {
     const {isActive, setIsActive} = useContext(GlobalContext)

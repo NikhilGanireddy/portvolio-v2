@@ -1,10 +1,10 @@
 "use client"
-import HomePage from "../../components/Homepage/HomePage";
-import Navbar from "../../components/Navbar/Navbar";
+import HomePage from "../components/Homepage/HomePage";
+import Navbar from "../components/Navbar/Navbar";
 import {motion} from "framer-motion";
-import useMousePosition from "../../utils/cursor";
+import useMousePosition from "../utils/cursor";
 import {useContext} from "react";
-import {GlobalContext} from "../Context/contextApi";
+import {GlobalContext} from "./Context/contextApi";
 
 export default function Home() {
 
