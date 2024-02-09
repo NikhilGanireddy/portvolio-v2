@@ -56,7 +56,7 @@ const projects = [{
     bg: true,
     height: "5120",
     width: "2880",
-    skills: ["Next JS", "ReactJs", "Tailwindcss", "Framer Motion", , "Swiper", "Shadcn", "clsx", "Css", "Html"]
+    skills: ["Next JS", "ReactJs", "Tailwindcss", "Framer Motion", "Swiper", "Shadcn", "clsx", "Css", "Html"]
 }, {
     id: 2,
     title: "AI - FUSION TOOLBOX ",
