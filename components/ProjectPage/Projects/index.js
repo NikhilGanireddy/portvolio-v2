@@ -81,15 +81,15 @@ const projects = [{
     skills: ["Next JS", "ReactJs", "Tailwindcss", "MongoDB", "axios", "jsonwebtoken"]
 }, {
     id: 4,
-    title: "Project 3",
+    title: "Project 4",
     description: "A groundbreaking SaaS platform addressing limitations in ChatGPT. Integrating image generation, video\n" + "creation, and advanced text-based AI, it enhances creative processes with a user-friendly interface. Offering five free AI prompts and a subscription model, the toolbox bridges the gap 5between human\n" + "creativity and machine intelligence",
     href: "/",
-    bg: true,
+    bg: false,
     images: ["https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/gokuu.png", "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/gokuu.png"],
     video: "",
     height: "5120",
     width: "2880",
-    skills: ["Next JS", "ReactJs", "Tailwindcss", "MongoDB", "Typescript", "Clerk", "trpc"]
+    skills: []
 },]
 
 export default projects
