@@ -47,16 +47,27 @@
 
 
 const projects = [{
-    id: 1,
-    title: "KUCE",
-    description: "A groundbreaking SaaS platform addressing limitations in ChatGPT. Integrating image generation, video\n" + "creation, and advanced text-based AI, it enhances creative processes with a user-friendly interface. Offering five free AI prompts and a subscription model, the toolbox bridges the gap between human\n" + "creativity and machine intelligence",
-    href: "https://kuce.vercel.app",
-    images: ["https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/kuce/Home.png", "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/kuce/1.png", "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/kuce/2.png", "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/kuce/3.png", "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/kuce/4.png", "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/kuce/5.png", "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/kuce/6.png"],
+    id: 0,
+    title: "thegdp's Portfolio",
+    description: "Developing this project, a comprehensive web application tailored for my college's final and third-year students to facilitate on-campus placements. This platform requires both companies and students to create accounts and undergo onboarding processes. Companies can efficiently search for candidates possessing relevant skills and expertise, while users with extensive knowledge and experience are prominently featured for consideration. Facilitated seamless communication between companies and users through the administration interface overseen by the placement in-charge.",
+    href: "/",
+    bg: false,
+    images: ["https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/gokuu.png", "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/gokuu.png"],
     video: "",
-    bg: true,
     height: "5120",
     width: "2880",
-    skills: ["Next JS", "ReactJs", "Tailwindcss", "Framer Motion", "Swiper", "Shadcn", "clsx", "Css", "Html"]
+    skills: []
+}, {
+    id: 1,
+    title: "KUCE - Placement Portal",
+    description: "Developing this project, a comprehensive web application tailored for my college's final and third-year students to facilitate on-campus placements. This platform requires both companies and students to create accounts and undergo onboarding processes. Companies can efficiently search for candidates possessing relevant skills and expertise, while users with extensive knowledge and experience are prominently featured for consideration. Facilitated seamless communication between companies and users through the administration interface overseen by the placement in-charge.",
+    href: "/",
+    bg: false,
+    images: ["https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/gokuu.png", "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/gokuu.png"],
+    video: "",
+    height: "5120",
+    width: "2880",
+    skills: []
 }, {
     id: 2,
     title: "AI - FUSION TOOLBOX ",
@@ -67,11 +78,24 @@ const projects = [{
     bg: true,
     height: "5120",
     width: "2880",
-    skills: ["Next JS", "ReactJs", "Tailwindcss", "Typescript", "Clerk", "OpenAi", "Replicate", "axios", "Shadcn", "clsx", "zod", "Css", "Html"]
+    skills: ["Next JS", "ReactJs", "Tailwindcss", "Typescript", "Clerk", "OpenAi", "Replicate", "axios", "Shadcn", "Javascript", "CSS", "HTML"]
 }, {
     id: 3,
+    title: "KUCE",
+    description: "Designed and developed \"KUCE,\" a college website redesign using Next.js, React.js, Tailwind CSS, Radix\n" +
+        "UI, and Zod. Collaborated with administrators to discuss deployment as the official site. A proud\n" +
+        "achievement awaiting deployment.",
+    href: "https://kuce.vercel.app",
+    images: ["https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/kuce/Home.png", "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/kuce/1.png", "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/kuce/2.png", "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/kuce/3.png", "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/kuce/4.png", "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/kuce/5.png", "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/kuce/6.png"],
+    video: "",
+    bg: true,
+    height: "5120",
+    width: "2880",
+    skills: ["Next JS", "ReactJs", "Tailwindcss", "Framer Motion", "Swiper", "Shadcn", "clsx", "Css", "Html"]
+}, {
+    id: 4,
     title: "RUDRAMADEVI - KUCE GIRL'S HOSTEL",
-    description: "A groundbreaking SaaS platform addressing limitations in ChatGPT. Integrating image generation, video\n" + "creation, and advanced text-based AI, it enhances creative processes with a user-friendly interface. Offering five free AI prompts and a subscription model, the toolbox bridges the gap 5between human\n" + "creativity and machine intelligence",
+    description: " Developed for my college hostel, this project facilitated seamless maintenance operations. Utilizing Next.jsand MongoDB for database management, the system integrated essential functionalities such as dailyttendance tracking, mess item management, fee calculations, and monitoring fee dues.",
     href: "https://rudramadevi.vercel.app/",
     images: ["https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/rudramadevi/1.png", "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/rudramadevi/2.png", "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/rudramadevi/3.png"],
     video: "",
@@ -80,8 +104,8 @@ const projects = [{
     width: "2880",
     skills: ["Next JS", "ReactJs", "Tailwindcss", "MongoDB", "axios", "jsonwebtoken"]
 }, {
-    id: 4,
-    title: "Project 4",
+    id: 5,
+    title: "Project 5",
     description: "A groundbreaking SaaS platform addressing limitations in ChatGPT. Integrating image generation, video\n" + "creation, and advanced text-based AI, it enhances creative processes with a user-friendly interface. Offering five free AI prompts and a subscription model, the toolbox bridges the gap 5between human\n" + "creativity and machine intelligence",
     href: "/",
     bg: false,

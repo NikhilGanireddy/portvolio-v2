@@ -39,6 +39,7 @@ const ProjectPage = () => {
                     skills={project.skills}
                     height={project.height}
                     width={project.width}
+                    description={project.description}
                 />)}
             </div>
         </div>

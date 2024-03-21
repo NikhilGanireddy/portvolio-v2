@@ -5,7 +5,7 @@ import {motion} from "framer-motion";
 import {Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from "../../ui/carousel";
 import IconArrowRight from "../../../icons/ArrowRight";
 
-const Project = ({title, id, href, images, bg, skills, height, width}) => {
+const Project = ({title, id, href, images, bg, skills, height, width, description}) => {
 
     const variants = {
         initial: {
@@ -24,7 +24,7 @@ const Project = ({title, id, href, images, bg, skills, height, width}) => {
             transition={{
                 duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.5
             }}
-            className={`group  flex flex-col w-full h-full border-neutral-400 border rounded-xl p-2 space-y-2 aspect-square lg:aspect-video relative `}>
+            className={`group  flex flex-col w-full h-full border-neutral-400 border rounded-xl p-2 space-y-2 lg:aspect-video relative `}>
             <div className={`flex w-full justify-start gap-1 px-1`}>
                 <motion.span
                     initial={"initial"}
@@ -89,7 +89,16 @@ const Project = ({title, id, href, images, bg, skills, height, width}) => {
                     transition={{
                         duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.75
                     }}
-                    className={`text-xl lg:text-2xl tracking-[-0.055em]  font-normal`}>{title}</motion.h1>
+                    className={`text-xl lg:text-2xl tracking-[-0.055em] font-normal`}>{title}</motion.h1>
+                <motion.h1
+
+                    initial={"initial"}
+                    animate={"enter"}
+                    variants={variants}
+                    transition={{
+                        duration: 0.5, ease: [0.83, 0, 0.17, 1], delay: 0.75
+                    }}
+                    className={`text-sm tracking-[-0.055em] font-normal line-clamp-2`}>{description}</motion.h1>
                 <div className={`w-full flex justify-start items-center gap-2 flex-wrap`}>
                     {skills.map((skill, index) => <motion.span
                         key={index}
