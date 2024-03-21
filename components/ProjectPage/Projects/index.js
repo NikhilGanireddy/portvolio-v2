@@ -52,7 +52,7 @@ const projects = [{
     description: "Developing this project, a comprehensive web application tailored for my college's final and third-year students to facilitate on-campus placements. This platform requires both companies and students to create accounts and undergo onboarding processes. Companies can efficiently search for candidates possessing relevant skills and expertise, while users with extensive knowledge and experience are prominently featured for consideration. Facilitated seamless communication between companies and users through the administration interface overseen by the placement in-charge.",
     href: "/",
     bg: false,
-    images: ["https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/gokuu.png", "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/gokuu.png"],
+    images: ["https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/portfolio/portfolio_1.png", "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/gokuu.png"],
     video: "",
     height: "5120",
     width: "2880",
