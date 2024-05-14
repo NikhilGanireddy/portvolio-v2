@@ -106,10 +106,10 @@ const projects = [{
 }, {
     id: 5,
     title: "Project 5",
-    description: "A groundbreaking SaaS platform addressing limitations in ChatGPT. Integrating image generation, video\n" + "creation, and advanced text-based AI, it enhances creative processes with a user-friendly interface. Offering five free AI prompts and a subscription model, the toolbox bridges the gap 5between human\n" + "creativity and machine intelligence",
+    description: "This project is in development. It will be deployed soon",
     href: "/",
     bg: false,
-    images: ["https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/gokuu.png", "https://raw.githubusercontent.com/NikhilGanireddy/portvolio-v2/main/public/images/gokuu.png"],
+    images: [""],
     video: "",
     height: "5120",
     width: "2880",
