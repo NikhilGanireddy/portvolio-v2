@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
-import {motion} from "framer-motion";
+import {motion, px} from "framer-motion";
 import {Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from "../../ui/carousel";
 import IconArrowRight from "../../../icons/ArrowRight";
 
@@ -116,3 +116,7 @@ const Project = ({title, id, href, images, bg, skills, height, width, descriptio
 }
 
 export default Project
+
+
+
+// width= 2228pxheight= 1235px

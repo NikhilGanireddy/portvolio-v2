@@ -40,3 +40,6 @@ export default function Home() {
         </div>
     </div>)
 }
+
+
+// width= 2228pxheight= 1235px

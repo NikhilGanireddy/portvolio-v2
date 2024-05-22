@@ -25,3 +25,5 @@ export default function RootLayout({
     </body>
     </html>
 }
+
+// width= 2228pxheight= 1235px
